@@ -6,89 +6,91 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout  title="Sistema de Gestión">
     <main>
-        <div class="flex items-center justify-center h-screen">
-            <div class="w-full max-w-md h-[90%]">
-                <form class="bg-white shadow-md rounded-lg p-8">
-                    <h2 class="text-2xl font-bold mb-4 flex justify-center">Registre su cuenta</h2>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="name">
-                            Nombre
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="name"
-                            type="text"
-                            placeholder="Juan"
-                        />
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="surname">
-                            Apellido
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="surname"
-                            type="text"
-                            placeholder="Ortiz"
-                        />
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="email">
-                            Gmail
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="email"
-                            type="email"
-                            placeholder="correo@correo.com"
-                        />
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="password">
-                            Contraseña
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="password"
-                            type="password"
-                            placeholder="Contraseña"
-                        />
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="dni">
-                            DNI
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="dni"
-                            type="password"
-                            placeholder="46048329"
-                        />
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="dni">
-                            Número de teléfono
-                        </label>
-                        <input
-                            class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="dni"
-                            type="password"
-                            placeholder="3764374859"
-                        />
-                    </div>
-                    <div class="flex w-full justify-center">
-                        <a href="/user/"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline m-3"
-                            type="submit"
-                        >
-                            Registrarse
-                        </a>
-                    </div>
-                    <div class="mt-4 flex justify-center">
-                        <p>Tiene una cuenta registrada?</p> 
-                        <a href="/login/" class="text-blue-500 hover:underline ml-1">Iniciá Sesión</a>
-                    </div>
-                </form>
+        <div class="flex items-center justify-center h-screen w-full">
+            <div class="w-full max-w-md h-auto flex justify-between">
+                <div class="w-full">
+                    <form class="bg-white shadow-md rounded-lg p-8">
+                        <h2 class="text-2xl font-bold mb-4 flex justify-center">Registre su cuenta</h2>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="name">
+                                Nombre
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="name"
+                                type="text"
+                                placeholder="Juan"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="surname">
+                                Apellido
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="surname"
+                                type="text"
+                                placeholder="Ortiz"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="email">
+                                Gmail
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="email"
+                                type="email"
+                                placeholder="correo@correo.com"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="password">
+                                Contraseña
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="password"
+                                type="password"
+                                placeholder="Contraseña"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="dni">
+                                DNI
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="dni"
+                                type="password"
+                                placeholder="46048329"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="dni">
+                                Número de teléfono
+                            </label>
+                            <input
+                                class="appearance-none border rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="dni"
+                                type="password"
+                                placeholder="3764374859"
+                            />
+                        </div>
+                        <div class="flex w-full justify-center">
+                            <a href="/user/"
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline m-3"
+                                type="submit"
+                            >
+                                Registrarse
+                            </a>
+                        </div>
+                        <div class="mt-4 flex justify-center">
+                            <p>Tiene una cuenta registrada?</p> 
+                            <a href="/login/" class="text-blue-500 hover:underline ml-1">Iniciá Sesión</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
